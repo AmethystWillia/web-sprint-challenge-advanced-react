@@ -83,10 +83,10 @@ In this project, you will build the retrieve data from a public api, add in a fa
 * [✔] Try and build it out first before you peek at the guided project. And *do not* copy/paste directly from the guided project!_oops (I went back and deleted everything to do from scratch)
 
 ### Testing the Checkout Form
-* [ ] Run the test runner and ensure that `src/components/CheckoutForm.test.js` is correctly called.
-* [ ] Fill out code necessary to test that that Checkout form renders without errors.
-* [ ] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
-* [ ] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
+* [✔] Run the test runner and ensure that `src/components/CheckoutForm.test.js` is correctly called.
+* [✔] Fill out code necessary to test that that Checkout form renders without errors.
+* [✔] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
+* [✔] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
 
 ## Important Notes:
 * Again, unlike other projects, the local server used here can not be accessed through the browser. For this and the rest of your sprint challenges, test the functioning of the server directly through your axios calls.
@@ -107,19 +107,30 @@ test("displays plants in cart", () => {
 ```
 
 ## Submission format
-* [ ] Submit via Codegrade by committing and pushing any new changes to **your main branch.**
-* [ ] Check Codegrade before the deadline to compare its results against your local tests.
-* [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
-* [ ] New commits will be evaluated by Codegrade if pushed before the sprint challenge deadline.
+* [✔] Submit via Codegrade by committing and pushing any new changes to **your main branch.**
+* [✔] Check Codegrade before the deadline to compare its results against your local tests.
+* [✔] Check Codegrade on the days following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
+* [✔] New commits will be evaluated by Codegrade if pushed before the sprint challenge deadline.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. What are the main differences between a stateful and a functional component?
-
-2. When does a componentWillMount function be called? What about a componentWillUpdate?
-
+  • `The main differences between stateful and functional components are:`
+      - `Stateful components can tap into the component's lifecycle`
+      - `Handlers are set without any keywords (function NAME/ const Name = () => {}`
+      - `The 'this' keyword is used when calling upon or setting state`
+2. When does a componentWillMount function get called? What about a componentWillUpdate?
+  • `componentWillMount is called right before the component mounts.`
+    `componentWillUpdate is called right before rendering and whenever state is changed.`
 3. Define stateful logic.
-
+  • `Stateful logic is logic that is built into a componenent.`
 4. What are the three step of creating a successful test? What is done in each phase? 
+  • `The three steps to creating a successful test are:`
+      - `Arrange: Set up everything the rest of the test needs to function. `
+      `Example: setting up render(<Componenet/>) so the rest of the tests can access the rendered information.`
+      - `Act: Find what you need to interact with and target it.`
+      `Example: finding input field and then typing in it.`
+      - `Assert: Ensure the changes you wanted to happen rendered/didn't render.`
+      `Example: check for an error message if an input was incorrectly filled.`
